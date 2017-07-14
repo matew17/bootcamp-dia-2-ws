@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Angular directives and pipes workshop.</h1>
+</div>
+<div class="container">
+  <ul>
+    <li *ngFor="let item of depData; let i = index;" >
+      <p appAtomicoAnimation>{{i}}: {{item | formatter}}</p>
+    </li>
+  </ul>
+</div>

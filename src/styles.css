@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@keyframes increase-animation {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
+  }
+
+}
+@keyframes decrease-animation {
+  0% {
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+}
+.increase {
+  transform: scale(1.6);
+  animation : increase-animation .6s;
+}
+
+.decrease {
+  transform: scale(1);
+  animation : decrease-animation .6s;
+}
